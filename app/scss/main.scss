@@ -1,0 +1,45 @@
+// Helpers
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/placeholders";
+
+@import "font-awesome.min.css";
+
+@include font-face(AdellePE, "../fonts/AdellePE", null, null, eot);
+@include font-face(Hurme2, "../fonts/HurmeGeometricSans2", null, null, otf);
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fafafa;
+  font-family: Hurme2, sans-serif;
+  color: #333;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+// Component.
+
+@import "components/backgrounds";
+
+// Layout.
+
+@import "layout/grid";
+@import "layout/mobile";
+
+// Pages
+
+@import "pages/home";

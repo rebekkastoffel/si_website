@@ -1,0 +1,48 @@
+.bg-black {
+  background-color: #{$black};
+
+  p, h2 {
+    color: #{$white};
+  }
+}
+.bg-gray {
+  background-color: #{$gray};
+
+  p, h2 {
+    color: #{$black};
+  }
+}
+.bg-white {
+  background-color: #{$white};
+
+  p, h2 {
+    color: #{$black};
+  }
+}
+
+.background-rebekka {
+  background-image: url('/images/rebekka.jpg');
+  background-size: cover;
+}
+.background-image1 {
+  background-image: url('/images/image01.jpg');
+  background-size: cover;
+}
+.background-image07 {
+  background-image: url('/images/image07.jpg');
+  background-size: cover;
+  filter: grayscale(60%);
+}
+.background-image08 {
+  background-image: url('/images/image08.jpg');
+  background-size: cover;
+  filter: grayscale(60%);
+}
+.background-image11 {
+  background-image: url('/images/image11.jpg');
+  background-size: cover;
+}
+.background-image21 {
+  background-image: url('/images/image21.jpg');
+  background-size: cover;
+}
