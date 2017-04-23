@@ -2,7 +2,7 @@
 .idea/**/modules.xml
 .idea/**/vcs.xml
 .idea/si_website.iml
-
+.idea/
 ## File-based project format:
 *.iws
 
