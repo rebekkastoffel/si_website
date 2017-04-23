@@ -1,0 +1,10 @@
+.idea/**/workspace.xml
+.idea/**/modules.xml
+.idea/**/vcs.xml
+.idea/si_website.iml
+
+## File-based project format:
+*.iws
+
+# Dependency directories
+node_modules/
