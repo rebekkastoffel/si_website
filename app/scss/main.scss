@@ -5,9 +5,14 @@
 
 @import "font-awesome.min.css";
 
-@include font-face(AdellePE, "../fonts/AdellePE", null, null, eot);
-@include font-face(Hurme2, "../fonts/HurmeGeometricSans2", null, null, otf);
-
+@font-face {
+  font-family: 'AdellePE';
+  src: url('../fonts/AdellePE.otf') format("opentype");
+}
+@font-face {
+  font-family: 'Hurme2';
+  src: url("../fonts/HurmeGeometricSans2.otf") format("opentype");
+}
 *, *:after, *:before {
   box-sizing: border-box;
 }

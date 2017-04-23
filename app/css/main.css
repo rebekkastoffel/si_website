@@ -16,11 +16,11 @@
   display: block; }
 
 @font-face {
-  font-family: "AdellePE";
-  src: url("../fonts/AdellePE.eot?") format("eot"); }
+  font-family: 'AdellePE';
+  src: url("../fonts/AdellePE.otf") format("opentype"); }
 
 @font-face {
-  font-family: "Hurme2";
+  font-family: 'Hurme2';
   src: url("../fonts/HurmeGeometricSans2.otf") format("opentype"); }
 
 *, *:after, *:before {
@@ -189,8 +189,6 @@ body {
       font-size: 1rem !important; }
     .half .quarter.empty {
       display: none !important; }
-  header .overlay i {
-    left: auto; }
   header video {
     height: 100vh;
     width: auto;
@@ -219,7 +217,9 @@ body {
     display: flex;
     justify-content: center;
     bottom: 3.5vh;
-    opacity: 0.8; }
+    opacity: 0.8;
+    left: 50vw;
+    transform: translate(-50%); }
     .overlay i:hover {
       animation: MoveUpDown 1s linear infinite; }
   .overlay #logo {
@@ -240,8 +240,11 @@ header.video {
 
 @keyframes MoveUpDown {
   0% {
-    bottom: 3.5vh; }
+    bottom: 3.5vh;
+    left: 50vw; }
   50% {
-    bottom: 5vh; }
+    bottom: 5vh;
+    left: 50vw; }
   100% {
-    bottom: 3.5vh; } }
+    bottom: 3.5vh;
+    left: 50vw; } }

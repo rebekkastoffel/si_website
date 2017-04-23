@@ -14,10 +14,6 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 
-gulp.task('hello', function(){
-    console.log("Hello You!");
-});
-
 gulp.task('sass', function(){
    return gulp.src('app/scss/**/*.scss')
        .pipe(sass())
@@ -38,13 +34,13 @@ gulp.task('browserSync', function(){
 gulp.task('useref', function(){
     return gulp.src('app/*.html')
         .pipe(useref())
-        .pipe(gulpIf('*.js', uglify()))
-        .pipe(gulpIf('*.css', cssnano()))
+        .pipe(gulpIf('js/!*.js', uglify()))
+        .pipe(gulpIf('css/!*.css', cssnano()))
         .pipe(gulp.dest('dist'))
 });
 
 gulp.task('images', function(){
-    return gulp.src('app/images/**/*.+(png|jpg|gif|svg)')
+    return gulp.src('app/images/**/*.+(png|jpg|gif|svg|mp4)')
         .pipe(cache(imagemin({
             interlaced: true
         })))
@@ -54,6 +50,14 @@ gulp.task('images', function(){
 gulp.task('fonts', function(){
     return gulp.src('app/fonts/**/*')
         .pipe(gulp.dest('dist/fonts'))
+});
+
+gulp.task('favicons', function(){
+    return gulp.src('app/favicons/**/*.+(png|jpg|gif|svg)')
+        .pipe(cache(imagemin({
+            interlaced: true
+        })))
+        .pipe(gulp.dest('dist/favicons'))
 });
 
 gulp.task('clean:dist', function(){
@@ -66,7 +70,7 @@ gulp.task('cache:clear', function (callback) {
 
 gulp.task('build', function(callback){
     runSequence('clean:dist',
-    ['sass', 'useref', 'images', 'fonts'],
+    ['sass', 'useref', 'images', 'fonts', 'favicons'],
     callback
     )
 })
