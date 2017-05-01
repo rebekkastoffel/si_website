@@ -181,18 +181,22 @@ body {
       display: flex;
       justify-content: center; }
     .half .quarter p {
-      width: 70vw !important;
-      font-size: 0.7rem !important; }
+      width: 70vw !important; }
       .half .quarter p.contact {
         width: 100% !important; }
     .half .quarter h2 {
       font-size: 1rem !important; }
+      .half .quarter h2.subtitle {
+        font-size: 1.4rem !important; }
+    .half .quarter .highlight {
+      font-size: 0.75rem !important; }
     .half .quarter.empty {
       display: none !important; }
+  header .mobile-video {
+    display: block !important;
+    filter: grayscale(65%); }
   header video {
-    height: 100vh;
-    width: auto;
-    max-width: 100vw; }
+    display: none; }
   header #logo {
     width: 35vw !important; }
     header #logo.smaller {
@@ -232,6 +236,9 @@ body {
     z-index: 999; }
     .overlay #logo.smaller {
       width: 7vw; }
+
+header .mobile-video {
+  display: none; }
 
 header.video {
   margin-bottom: -3px; }

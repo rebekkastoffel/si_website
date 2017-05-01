@@ -43,6 +43,9 @@
   }
 }
 header {
+  .mobile-video {
+    display: none;
+  }
   &.video {
     margin-bottom: -3px;
 

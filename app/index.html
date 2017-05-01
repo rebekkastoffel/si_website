@@ -3,7 +3,6 @@
 <head>
     <!--build:js js/main.min.js -->
     <script src="js/jquery.min.js"></script>
-    <script src="js/skel.min.js"></script>
     <script src="js/main.js"></script>
     <!-- endbuild -->
 
@@ -30,16 +29,17 @@
     <![endif]-->
     <div id="wrapper">
         <header class="panel video bg-black">
-            <video width="100%" autoplay loop muted>
-                <source src="/images/sea.mp4" type="video/mp4">
+            <video width="100%" autoplay loop muted id="bg-video">
+                <source src="images/sea.mp4" type="video/mp4">
             </video>
+            <img src="images/sea.gif" alt="intro video" class="mobile-video"/>
             <div class="overlay filtered">
                 <img src="images/stoffelinteractive_white.svg" id="logo"/>
                 <h1 class="title">beautiful things, made with love</h1>
-                <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                <i class="fa fa-angle-double-down scroll-button" aria-hidden="true"></i>
             </div>
         </header>
-        <section class="panel">
+        <section class="panel" id="first">
             <div class="half">
                 <div class="quarter bg-black">
                     <div class="inner">
@@ -137,6 +137,7 @@
                     <div class="inner">
                         <p class="contact">
                             <a href="mailto:info@stoffelinteractive.ch">// info(at)stoffelinteractive.ch</a>
+                            <a href="http://www.linkedin.com/rebekkastoffel">LinkedIn</a>
                         </p>
                     </div>
                 </div>
