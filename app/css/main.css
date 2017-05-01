@@ -192,8 +192,10 @@ body {
       font-size: 0.75rem !important; }
     .half .quarter.empty {
       display: none !important; }
-  header .mobile-video {
-    display: block !important;
+  header.video {
+    background-image: url("/images/sea.gif");
+    background-size: cover;
+    height: 100vh;
     filter: grayscale(65%); }
   header video {
     display: none; }
