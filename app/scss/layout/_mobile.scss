@@ -12,8 +12,6 @@
       }
       p {
         width: 70vw !important;
-        font-size: 0.7rem !important;
-
 
         &.contact {
           width: 100% !important;
@@ -21,6 +19,12 @@
       }
       h2 {
         font-size: 1rem !important;
+        &.subtitle {
+          font-size: 1.4rem !important;
+        }
+      }
+      .highlight {
+        font-size: 0.75rem !important;
       }
       &.empty {
         display: none !important;
@@ -28,10 +32,15 @@
     }
   }
   header {
+    .mobile-video {
+      display: block !important;
+      filter: grayscale(65%);
+    }
     video {
-      height: 100vh;
-      width: auto;
-      max-width: 100vw;
+      //height: 100vh;
+      //width: auto;
+      //max-width: 100vw;
+      display: none;
     }
     #logo {
       width: 35vw !important;
