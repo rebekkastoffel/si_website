@@ -183,7 +183,8 @@ body {
     .half .quarter p {
       width: 70vw !important; }
       .half .quarter p.contact {
-        width: 100% !important; }
+        width: 100% !important;
+        font-size: 0.85rem !important; }
     .half .quarter h2 {
       font-size: 1rem !important; }
       .half .quarter h2.subtitle {
