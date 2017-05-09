@@ -35,13 +35,14 @@
   header {
     &.video {
       background-image: url('/images/sea.gif');
+      content: "";
       background-size: cover;
       height: 100vh;
       filter: grayscale(65%);
     }
-    video {
+    /*video {
       display: none;
-    }
+    }*/
     #logo {
       width: 35vw !important;
 
