@@ -193,17 +193,20 @@ body {
       font-size: 0.75rem !important; }
     .half .quarter.empty {
       display: none !important; }
-  header.video {
-    background-image: url("/images/sea.gif");
-    background-size: cover;
-    height: 100vh;
-    filter: grayscale(65%); }
-  header video {
-    display: none; }
-  header #logo {
-    width: 35vw !important; }
-    header #logo.smaller {
-      width: 20vw !important; } }
+  header {
+    /*video {
+      display: none;
+    }*/ }
+    header.video {
+      background-image: url("/images/sea.gif");
+      content: "";
+      background-size: cover;
+      height: 100vh;
+      filter: grayscale(65%); }
+    header #logo {
+      width: 35vw !important; }
+      header #logo.smaller {
+        width: 20vw !important; } }
 
 .overlay {
   position: absolute;
